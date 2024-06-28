@@ -2,7 +2,7 @@ import numpy as np
 from PIL import Image
 import os, glob, random
 
-outfile = "/content/drive/MyDrive/人工知能/人工知能1/自分用/image/photos.npz" # 保存ファイル名
+outfile = "image/photos.npz" # 保存ファイル名
 max_photo = 200 # 利用する写真の枚数
 photo_size = 64 # 画像サイズ
 x = [] # 画像データ
@@ -17,8 +17,8 @@ def main():
         os.makedirs(output_folder)
 
     # 各画像のフォルダを読む
-    glob_files("/content/drive/MyDrive/人工知能/人工知能1/自分用/グッピー/グッピーオス", 0)
-    glob_files("/content/drive/MyDrive/人工知能/人工知能1/自分用/グッピー/グッピーメス", 1)
+    glob_files("グッピーオス", 0)
+    glob_files("グッピーメス", 1)
 
     # ファイルへ保存
     np.savez(outfile, x=x, y=y)

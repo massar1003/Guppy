@@ -46,7 +46,7 @@ in_shape = (im_rows, im_cols, im_color)
 nb_classes = 3
 
 # 写真データを読み込み --- (*2)
-photos = np.load('/content/drive/MyDrive/人工知能/人工知能1/自分用/image/photos.npz')
+photos = np.load('image/photos.npz')
 x = photos['x']
 y = photos['y']
 
@@ -94,4 +94,4 @@ print(len(y_train))
 print(len(x_test))
 print(len(y_test))
 
-model.save_weights('/content/drive/MyDrive/人工知能/人工知能1/自分用/image/photos-model-light.hdf5')
+model.save_weights('image/photos-model-light.hdf5')

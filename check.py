@@ -49,7 +49,7 @@ LABELS = ["オス","メス"]
 
 # 保存したCNNモデルを読み込む
 model = get_model(in_shape, nb_classes)
-model.load_weights('/content/drive/MyDrive/人工知能/人工知能1/自分用/image/photos-model-light.hdf5')
+model.load_weights('image/photos-model-light.hdf5')
 
 def check_photo(path):
     # 画像を読み込む
@@ -72,31 +72,31 @@ def check_photo(path):
 def check_photo_str(path):
     idx, per = check_photo(path)
     # 答えを表示
-    print("この写真は、", LABELS[idx])
-    print("可能性は、", per, "%")
+    print("この写真は、", LABELS[idx], "だと思います。")
+    print("可能性は ", per, "% 。")
 
 if __name__ == '__main__':
-    check_photo_str('/content/drive/MyDrive/人工知能/人工知能1/自分用/グッピー/グッピーオス/IMG_20200519_213148.jpg')
-    print("※オスです。")
+    check_photo_str('グッピーオス/IMG_20200519_213148.jpg')
+    print("※ オスです。")
     print()
-    check_photo_str('/content/drive/MyDrive/人工知能/人工知能1/自分用/グッピー/グッピーメス/16433526737_0df4bc840a_w.jpg')
-    print("※メスです。")
+    check_photo_str('グッピーメス/16433526737_0df4bc840a_w.jpg')
+    print("※ メスです。")
     print()
-    check_photo_str('/content/drive/MyDrive/人工知能/人工知能1/自分用/グッピー/グッピーメス/4686255259_99e3d185fd_n.jpg')
-    print("※メスです。")
+    check_photo_str('グッピーメス/4686255259_99e3d185fd_n.jpg')
+    print("※ メスです。")
     print()
-    check_photo_str('/content/drive/MyDrive/人工知能/人工知能1/自分用/グッピー/グッピーオス/P6250016.jpg')
-    print("※オスです。")
+    check_photo_str('グッピーオス/P6250016.jpg')
+    print("※ オスです。")
     print()
-    check_photo_str('/content/drive/MyDrive/人工知能/人工知能1/自分用/グッピー/グッピーオス/images (2).jpg')
-    print("※オスです。")
+    check_photo_str('グッピーオス/images (2).jpg')
+    print("※ オスです。")
     print()
-    check_photo_str('/content/drive/MyDrive/人工知能/人工知能1/自分用/グッピー/グッピーメス/IMG_20200519_213128.jpg')
-    print("※メスです。")
+    check_photo_str('グッピーメス/IMG_20200519_213128.jpg')
+    print("※ メスです。")
     print()
-    check_photo_str('/content/drive/MyDrive/人工知能/人工知能1/自分用/グッピー/グッピーメス/9222928992_c734b127d2_w.jpg')
-    print("※メスです。")
+    check_photo_str('グッピーメス/9222928992_c734b127d2_w.jpg')
+    print("※ メスです。")
     print()
-    check_photo_str('/content/drive/MyDrive/人工知能/人工知能1/自分用/グッピー/グッピーメス/7852134236_7b6c79ac26_n.jpg')
-    print("※メスです。")
+    check_photo_str('グッピーメス/7852134236_7b6c79ac26_n.jpg')
+    print("※ メスです。")
     print()
