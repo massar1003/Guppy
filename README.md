@@ -18,13 +18,12 @@ Google Colaboratory, Python
 
  ＜ソースコードの場所＞
  
- "\Guppy\read_image.py"
- "\Guppy\cnn.py"
- "\Guppy\check.py"
+"\Guppy\read_image.py", "\Guppy\cnn.py", "\Guppy\check.py"
 
  ＜実行方法＞
  
-"read_image.py"→"cnn.py"→"check.py"の順に実行していくと実際にグッピーの雌雄判定を行えます。もしうまくいかない場合は"imgae"というフォルダを丸ごと削除して"read_image.py"から実行し直したらうまくいくはずです。
+"anaconda"などの"Python"が入っている環境で"read_image.py"→"cnn.py"→"check.py"の順にプログラムを実行していくと実際にグッピーの雌雄判定ができます。もしうまくいかない場合は"imgae"というフォルダを丸ごと削除して"read_image.py"から実行し直したらうまくいくはずです。
 
 ＜実行しないで見る方法＞
+
 "start.ipynb"でプログラムや学習結果などを見れます。当時は"Google Colaboratory"で実行しており、パス含めてすべて当時のままになっています。
